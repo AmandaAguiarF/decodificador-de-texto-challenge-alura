@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="/assets/logo.png" alt="Logo da Alura">
+    </header>
+    <main class="conteudo">
+        <section class="conteudo__texto">
+            <h1>Decodificador de Texto</h1>
+            <textarea class="conteudo__placeholder" id="inputText" placeholder="Digite seu texto aqui..."
+                oninput="validateInput()"></textarea><br>
+            <div id="validationMessage" class="conteudo__validacao" style="display: none;">
+                <img src="assets/alerta.png" alt="Aviso" class="alerta-icone">
+                <span>Apenas letras minúsculas e sem acento.</span>
+            </div>
+            <button class="conteudo__botao1" onclick="encryptText()">Criptografar</button>
+            <button class="conteudo__botao2" onclick="decryptText()">Descriptografar</button><br>
+        </section>
+        <div class="conteudo__imagem" id="outputContainer" class="output-container">
+            <img id="placeholderImage" src="assets/placeholder.png" alt="Imagem de exemplo">
+            <div id="outputText" class="output-text" style="display: none;"></div>
+            <button id="copyButton" style="display: none;" onclick="copyToClipboard()">Copiar</button>
+        </div>
+        <script src="script.js"></script>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy;2024 Desenvolvido por Amanda Aguiar.</p>
+    </footer>
+</body>
+
+</html>
