@@ -71,7 +71,7 @@ function copyToClipboard() {
     window.getSelection().removeAllRanges(); // Para dispositivos móveis
     window.getSelection().addRange(range);
     document.execCommand("copy");
-    alert("Texto copiado para a área de transferência!");
+    alert("Texto copiado com sucesso!");
     resetAfterCopy(); // Chama a função de reset após copiar
 }
 

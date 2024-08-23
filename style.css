@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital@0;1&display=swap');
 
-:root {
-    
-
-    --fonte-principal: "Krona One", sans-serif;
-    --fonte-secundaria: "Montserrat", sans-serif;
-}
-
-
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
